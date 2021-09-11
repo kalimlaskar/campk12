@@ -761,6 +761,11 @@ body {
         text-align: center;
         height: 4rem;
     }
+    .mobile-pricing-timeline #pills-begineer td:nth-child(even), .mobile-pricing-timeline #pills-advanced td:nth-child(even)  {
+        background: #fff;
+        text-align: center;
+        height: 4rem;
+    }
 
     .mobile-pricing-timeline .mast-king svg {
         margin-top: -40px;
@@ -1077,8 +1082,13 @@ body {
         align-content: center;
     }
 
-    .mobile-pricing-timeline .mast-king {
+    .mobile-pricing-timeline  .mast-king {
         background: linear-gradient(87.4deg, #F2C94C 29.05%, #F2994A 110.06%);
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px;
+    }
+    .mobile-pricing-timeline #pills-begineer .mast-king, .mobile-pricing-timeline #pills-advanced .mast-king {
+        background: #fff;
         border-radius: 10px 10px 0px 0px;
         padding: 10px;
     }
@@ -1087,12 +1097,17 @@ body {
         font-weight: bold;
         font-size: 12px;
         line-height: 20px;
-        /* identical to box height, or 167% */
-
         text-align: center;
         text-transform: uppercase;
-
         color: #FFFFFF;
+    }
+    .mobile-pricing-timeline #pills-begineer .mast-king h2, .mobile-pricing-timeline #pills-advanced .mast-king h2 {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #076FEC;
     }
 
     .mobile-pricing-timeline .mast-king p {
@@ -1100,11 +1115,16 @@ body {
         font-size: 12px;
         line-height: 24px;
         margin-bottom: 5px;
-        /* identical to box height, or 200% */
-
         text-align: center;
-
         color: #FFFFFF;
+    }
+    .mobile-pricing-timeline #pills-begineer .mast-king p, .mobile-pricing-timeline #pills-advanced .mast-king p{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 5px;
+        text-align: center;
+        color: #1F2A55;
     }
 
     .mobile-pricing-timeline colgroup:nth-child(1) {
