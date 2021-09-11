@@ -1,8 +1,14 @@
 body {
-    background: #E5E5E5;
+    background: #EAF6FD;
     font-family: 'Montserrat', sans-serif;
 }
 
+.mobile-pricing-timeline {
+    display: none;
+}
+.mobile-last-cta{
+    display: none;
+}
 .hero,
 .hero-nav {
     max-width: 910px;
@@ -92,27 +98,586 @@ body {
 .grade-image-caption p {
     width: 159px;
 }
+
 .timeline-summary {
-        position: relative;
-        margin: 49px 0px;
+    position: relative;
+    margin: 49px 0px;
+}
+
+.timeline-summary .dashed {
+    position: absolute;
+    max-width: 100%;
+    width: 98%;
+    height: 0px;
+    top: 0rem;
+    border: 2px dashed #1F2A55;
+}
+
+.timeline-summary .circle,
+.timeline-summary .circle-last {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -9px;
+    margin-left: 40px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 4px solid #1F2A55;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-summary .circle-last {
+    margin-left: 70px;
+}
+
+.timeline-summary svg {
+    margin-top: -12.5rem;
+}
+
+.timeline-summary .row {
+    justify-content: center;
+}
+
+.timeline-summary .col-md-3 {
+    text-align: center;
+}
+
+.timeline-summary .text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #1F2A55;
+}
+
+.timeline-summary .col-md-3 p {
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #1F2A55;
+    opacity: 0.7;
+}
+
+.timeline-summary .fa-caret-right:before {
+    content: "\f0da";
+    position: absolute;
+    font-size: 30px;
+    top: -1rem;
+    right: -1rem;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    margin: 49px 0px;
+}
+
+.book-cta button {
+    width: 350px;
+    height: 66px;
+    background-color: #076FEC !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.download-cta button {
+    width: 376px;
+    text-transform: uppercase;
+    background-color: #fff !important;
+    color: #076fec;
+    height: 66px;
+    letter-spacing: 2px;
+}
+
+.download-cta button span {
+    color: #1F2A5599;
+}
+
+.mem .membership-title {
+    text-align: center;
+}
+
+.mem .membership-title h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 46px;
+    /* identical to box height, or 144% */
+    letter-spacing: 0.1px;
+    color: #1F2A55;
+}
+
+.mem .membership-title p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #1F2A55;
+
+    opacity: 0.6;
+}
+
+.mem {
+    margin: 81px 0px;
+}
+
+.dwn-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-container .btn-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.timeline-container .btn-primary img {
+    width: 40px;
+    padding-left: 10px;
+}
+
+.pricing table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+    width: 100%;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pricing th,
+.pricing td {
+    font-family: inherit;
+    font-size: .875em;
+    line-height: 1.45;
+    color: #444;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+.pricing th {
+    font-weight: 600;
+}
+
+.pricing colgroup:nth-child(1) {
+    width: 31%;
+    border: 0 none;
+
+}
+
+.pricing colgroup:nth-child(2) {
+    width: 22%;
+    /* border: 1px solid #ccc; */
+}
+
+.pricing colgroup:nth-child(4) {
+    width: 25%;
+    /* border: 2px solid #EA9541; */
+}
+
+.pricing colgroup:nth-child(3) {
+    width: 22%;
+    /* border: 1px solid #ccc; */
+}
+
+/* Tablehead */
+
+.pricing thead th {
+    background: #fff;
+    text-align: center;
+    position: relative;
+    /* border-bottom: 1px solid #ccc; */
+    padding: 3em 0 2em;
+    font-weight: 400;
+    color: #999;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.pricing thead th:nth-child(4) {
+    background: linear-gradient(87.4deg, #F2C94C 29.05%, #F2994A 110.06%);
+}
+
+.pricing thead th:nth-child(1) {
+    background: transparent;
+}
+
+.pricing thead th h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #076FEC;
+}
+
+.pricing thead th h2+p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #1F2A55;
+}
+
+.pricing thead th:nth-child(4) h2 {
+    color: #fff;
+}
+
+.pricing thead th:nth-child(4) h2+p {
+    color: #fff;
+}
+
+
+
+/* Tablebody */
+
+.pricing tbody th {
+    background: transparent;
+    /* border-left: 1px solid #ccc; */
+}
+
+.pricing tbody th span {
+    font-weight: normal;
+    font-size: 87.5%;
+    color: #999;
+    display: block;
+}
+
+.pricing tbody td {
+    background: #fff;
+    text-align: center;
+}
+
+
+
+.pricing tbody tr:last-child td {
+    border-bottom: 0 none;
+}
+
+/* Tablefooter */
+
+.pricing tfoot th {
+    padding: 2em 1em;
+}
+
+.pricing tfoot td {
+    text-align: center;
+    padding: 2em 1em;
+    background: #fff;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.pricing tfoot td:nth-child(4) {
+    background: #FFF6D9;
+}
+
+.pricing tfoot a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.125em 2em;
+    background: #59c7fb;
+    border-radius: .5em;
+}
+
+.pricing .fa-check {
+    color: #5CCB9C;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pricing .fa-times {
+    color: #1F2A5533;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pricing tbody td:nth-child(4) {
+    background: #FFF6D9 !important;
+}
+
+.pricing .pricing-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1F2A55;
+}
+
+.pricing svg {
+    margin-right: 15px;
+}
+
+.fa-horizontal-rule {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+}
+
+.fa-horizontal-rule:before {
+    color: rgba(31, 42, 85, 0.1);
+    transform: scale(10.5, 1);
+}
+
+.pricing del {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1F2A55;
+    opacity: 0.7;
+}
+
+.pricing .discount {
+    background: #CCFFF3;
+    color: #005E47;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.pricing .pricing-months {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1F2A55;
+}
+
+.pricing .price-time {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #EA9541;
+}
+
+.pricing .pm {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.pricing .td-pm {
+    padding-top: 0px;
+}
+
+.pricing .td-pm .fa-horizontal-rule {
+    padding-top: 16px;
+}
+
+.pricing .pm-td .fa-horizontal-rule {
+    padding-top: 16px;
+}
+
+.pricing .pm-td {
+    padding-top: 16px;
+}
+
+.pricing .pm-td-pad {
+    padding-top: 34px;
+}
+
+.last-cta {
+    background: linear-gradient(135deg, #205DEE 0%, #22B7EF 100%);
+    border-radius: 20px;
+}
+
+.foo-img img {
+    width: 154px;
+    margin-top: -10px;
+}
+
+.foo-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.last-cta .col-md-7,
+.last-cta .col-md-3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.foo-cta button {
+    width: 285px;
+    height: 58px;
+    text-transform: uppercase;
+    left: 1011px;
+    top: 2450px;
+    background: #F5A623;
+    border-radius: 4px;
+    border: none;
+}
+
+.last-cta {
+    margin: 49px 0px;
+}
+
+.king-icon {
+    display: flex;
+    flex-direction: row;
+    margin-right: 7rem;
+    justify-content: flex-end;
+}
+
+.mobile-filter-grade {
+    display: none;
+}
+
+.dwn-btn span:nth-child(1) {
+    color: #076FEC;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .mobile-filter-grade {
+        display: block !important;
     }
 
-    .timeline-summary .dashed {
+    .resp-filter-grade {
+        display: none;
+    }
+
+    .hero .hero-title h1 {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .hero .hero-para p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-nav .nav-link {
+        margin-top: 1rem;
+    }
+
+    .download-cta button {
+        width: unset;
+    }
+
+    .timeline-container .btn-primary {
+        padding-left: 10px;
+    }
+
+    .download-cta button span {
+        text-align: left;
+    }
+
+    .mem .membership-title h2 {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+        text-align: center;
+        margin: 16px 0px;
+        color: #1F2A55;
+    }
+
+    .mobile-filter-grade .nav {
+        justify-content: center;
+        padding: 10px 0px;
+        border-radius: 10px;
+    }
+
+    .mobile-filter-grade .active {
+        color: #076FEC !important;
+        font-weight: bold;
+    }
+
+    .mobile-filter-grade .nav-pills {
+        background: #DDE9F5;
+    }
+
+    .mobile-filter-grade .nav-link {
+        /* margin: 0px 2px; */
+        width: 63px;
+        color: #7D96BC;
+        font-weight: bold;
+
+    }
+
+    .mobile-filter-grade .nav-link.active {
+        background: #FFFFFF !important;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+        border-radius: 10px !important;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 5px;
+        width: 72px;
+    }
+
+    .mobile-timeline-summary {
+        position: relative;
+    }
+
+    .mobile-timeline-summary .dashed {
         position: absolute;
-        max-width: 100%;
-        width: 98%;
-        height: 0px;
-        top: 0rem;
+        width: 1px;
+        height: 670px;
+        left: 100px;
+        top: 6rem;
         border: 2px dashed #1F2A55;
     }
 
-    .timeline-summary .circle,
-    .timeline-summary .circle-last {
+    .mobile-filter-grade .grade-image-caption p {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .mobile-filter-grade .col-sm-3 {
+        width: 30%;
+    }
+
+    .mobile-filter-grade .col-sm-7 {
+        width: 70%;
+    }
+
+    .mobile-filter-grade .grade-image .grade-image-caption {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .mobile-filter-grade .grade-image img {
+        width: 100%;
+        height: 92px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .mobile-filter-grade .row {
+        margin-left: 6px;
+        margin-top: 1rem;
+        margin-right: 10px;
+    }
+
+    .mobile-filter-grade .row .col-md-3 {
+        padding-right: 0px;
+    }
+
+    .mobile-filter-grade svg {
+        position: relative;
+        left: 99px;
+        top: 1rem;
+    }
+
+    .mobile-filter-grade .mobile-timeline-summary .circle,
+    .mobile-timeline-summary .circle-last {
         position: absolute;
         width: 24px;
         height: 24px;
-        top: -9px;
-        margin-left: 40px;
+        margin-left: 72px;
         text-align: center;
         background: #FFFFFF;
         border: 4px solid #1F2A55;
@@ -121,393 +686,495 @@ body {
         z-index: 2;
     }
 
-    .timeline-summary .circle-last {
-        margin-left: 70px;
+    .mobile-filter-grade .mobile-timeline-summary .col-md-3:nth-child(2) {
+        padding-top: 36px;
     }
 
-    .timeline-summary svg {
-        margin-top: -12.5rem;
+    .mobile-filter-grade .mobile-timeline-summary .col-md-3:nth-child(3) {
+        padding-top: 32px;
     }
 
-    .timeline-summary .row {
-        justify-content: center;
+    .mobile-filter-grade .mobile-timeline-summary .col-md-3:nth-child(4) {
+        padding-top: 24px;
     }
 
-    .timeline-summary .col-md-3 {
+    .mobile-filter-grade .mobile-timeline-summary .col-md-3:nth-child(5) {
+        padding-top: 24px;
+    }
+
+    .mobile-filter-grade span.text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .mobile-filter-grade .fa-caret-down:before {
+        content: "\f0d7";
+        position: absolute;
+        bottom: -1rem;
+        font-size: 17px;
+        right: -5px;
+    }
+
+    .mobile-pricing-timeline table {
+        margin-top: 5rem;
+    }
+
+    .mobile-pricing-timeline .pricing-icon {
+        font-size: 12px;
+        display: flex;
+        color: #1F2A55;
+        line-height: 18px;
+    }
+
+    .mobile-pricing-timeline span.pricing-months {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
         text-align: center;
+        color: #1F2A55;
+        display: flex;
+
     }
 
-    .timeline-summary .text {
+    .mobile-pricing-timeline span.price-time {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #EA9541;
+    }
+
+    .mobile-pricing-timeline .fa-check {
+        color: #5CCB9C;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .mobile-pricing-timeline .fa-times{
+        color: #1F2A5533;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .mobile-pricing-timeline td:nth-child(even) {
+        background: #FFF6D9;
+        text-align: center;
+        height: 4rem;
+    }
+
+    .mobile-pricing-timeline .mast-king svg {
+        margin-top: -40px;
+        margin-left: 35px;
+    }
+    .mobile-pricing-timeline #pills-begineer, .mobile-pricing-timeline #pills-advanced {
+        background: transparent !important;
+        box-shadow: unset;
+    }
+
+    .mobile-pricing-timeline #pills-tab table {
+        border-collapse: separate;
+        border-spacing: 5px 0;
+        width: 100%;
+        text-align: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+
+    .mobile-pricing-timeline #pills-tab th,
+    .mobile-pricing-timeline #pills-tab td {
+        font-family: inherit;
+        font-size: .875em;
+        line-height: 1.45;
+        color: #444;
+        vertical-align: middle;
+        padding: 1em;
+    }
+
+    .mobile-pricing-timeline #pills-tab th {
+        font-weight: 600;
+    }
+
+    .mobile-pricing-timeline #pills-tab colgroup:nth-child(1) {
+        width: 31%;
+        border: 0 none;
+
+    }
+
+    .mobile-pricing-timeline #pills-tab colgroup:nth-child(2) {
+        width: 22%;
+        /* border: 1px solid #ccc; */
+    }
+
+    .mobile-pricing-timeline #pills-tab colgroup:nth-child(4) {
+        width: 25%;
+        /* border: 2px solid #EA9541; */
+    }
+
+    .mobile-pricing-timeline #pills-tab colgroup:nth-child(3) {
+        width: 22%;
+        /* border: 1px solid #ccc; */
+    }
+
+    /* Tablehead */
+
+    .mobile-pricing-timeline #pills-tab thead th {
+        background: #fff;
+        text-align: center;
+        position: relative;
+        /* border-bottom: 1px solid #ccc; */
+        padding: 3em 0 2em;
+        font-weight: 400;
+        color: #999;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .mobile-pricing-timeline #pills-tab thead th:nth-child(4) {
+        background: linear-gradient(87.4deg, #F2C94C 29.05%, #F2994A 110.06%);
+    }
+
+    .mobile-pricing-timeline #pills-tab thead th:nth-child(1) {
+        background: transparent;
+    }
+
+    .mobile-pricing-timeline #pills-tab thead th h2 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #076FEC;
+    }
+
+    .mobile-pricing-timeline #pills-tab thead th h2+p {
         font-weight: 600;
         font-size: 24px;
-        line-height: 29px;
-        font-feature-settings: 'pnum'on, 'lnum'on;
+        line-height: 40px;
         color: #1F2A55;
     }
 
-    .timeline-summary .col-md-3 p {
-        font-size: 16px;
-        line-height: 20px;
-        font-feature-settings: 'pnum'on, 'lnum'on;
+    .mobile-pricing-timeline #pills-tab thead th:nth-child(4) h2 {
+        color: #fff;
+    }
+
+    .mobile-pricing-timeline #pills-tab thead th:nth-child(4) h2+p {
+        color: #fff;
+    }
+
+
+
+    /* Tablebody */
+
+    .mobile-pricing-timeline #pills-tab tbody th {
+        background: transparent;
+        /* border-left: 1px solid #ccc; */
+    }
+
+    .mobile-pricing-timeline #pills-tab tbody th span {
+        font-weight: normal;
+        font-size: 87.5%;
+        color: #999;
+        display: block;
+    }
+
+    .mobile-pricing-timeline #pills-tab tbody td {
+        background: #fff;
+        text-align: center;
+    }
+
+
+
+    .mobile-pricing-timeline #pills-tab tbody tr:last-child td {
+        border-bottom: 0 none;
+    }
+
+    /* Tablefooter */
+
+    .mobile-pricing-timeline #pills-tab tfoot th {
+        padding: 2em 1em;
+    }
+
+    .mobile-pricing-timeline #pills-tab tfoot td {
+        text-align: center;
+        padding: 2em 1em;
+        background: #fff;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .mobile-pricing-timeline #pills-tab tfoot td:nth-child(4) {
+        background: #FFF6D9;
+    }
+
+    .mobile-pricing-timeline #pills-tab tfoot a {
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.125em 2em;
+        background: #59c7fb;
+        border-radius: .5em;
+    }
+
+    .mobile-pricing-timeline #pills-tab .fa-check {
+        color: #5CCB9C;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .mobile-pricing-timeline #pills-tab .fa-times {
+        color: #1F2A5533;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .mobile-pricing-timeline #pills-tab tbody td:nth-child(4) {
+        background: #FFF6D9 !important;
+    }
+
+    .mobile-pricing-timeline #pills-tab .mobile-pricing-timeline #pills-tab-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1F2A55;
+    }
+
+    .mobile-pricing-timeline #pills-tab svg {
+        margin-right: 15px;
+    }
+
+    .pricing-icon svg {
+        width: 24px;
+    }
+
+    .fa-horizontal-rule {
+        display: flex;
+        justify-content: center;
+        padding-top: 28px;
+    }
+
+    .fa-horizontal-rule:before {
+        color: rgba(31, 42, 85, 0.1);
+        transform: scale(6.5, 1);
+    }
+
+    .mobile-pricing-timeline #pills-tab del {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
         color: #1F2A55;
         opacity: 0.7;
     }
 
-    .timeline-summary .fa-caret-right:before {
-        content: "\f0da";
-        position: absolute;
-        font-size: 30px;
-        top: -1rem;
-        right: -1rem;
-    }
-    .timeline-container {
-        display: flex;
-        justify-content: center;
-        margin: 49px 0px;
+    .mobile-pricing-timeline #pills-tab .discount {
+        background: #CCFFF3;
+        color: #005E47;
+        margin: 4px;
+        padding: 8px;
+        border-radius: 30px;
     }
 
-    .book-cta button {
-        width: 350px;
-        height: 66px;
-        background-color: #076FEC !important;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .download-cta button {
-        width: 376px;
-        text-transform: uppercase;
-        background-color: #fff !important;
-        color: #076fec;
-        height: 66px;
-        letter-spacing: 2px;
-    }
-
-    .download-cta button span {
-        color: #1F2A5599;
-    }
-
-    .mem .membership-title {
-        text-align: center;
-    }
-
-    .mem .membership-title h2 {
+    .mobile-pricing-timeline #pills-tab .mobile-pricing-timeline #pills-tab-months {
         font-weight: 600;
-        font-size: 32px;
-        line-height: 46px;
-        /* identical to box height, or 144% */
-        letter-spacing: 0.1px;
+        font-size: 18px;
+        line-height: 24px;
         color: #1F2A55;
     }
 
-    .mem .membership-title p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 32px;
-
-        color: #1F2A55;
-
-        opacity: 0.6;
+    .mobile-pricing-timeline #pills-tab .price-time {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #EA9541;
     }
 
-    .mem {
-        margin: 81px 0px;
-    }
-
-    .dwn-btn {
-        display: flex;
+    .mobile-pricing-timeline #pills-tab .pm {
+        display: inline-flex;
         flex-direction: column;
     }
 
-    .timeline-container .btn-primary {
-        display: inline-flex;
+    .mobile-pricing-timeline #pills-tab .td-pm {
+        padding-top: 0px;
+    }
+
+    .mobile-pricing-timeline #pills-tab .td-pm .fa-horizontal-rule {
+        padding-top: 16px;
+    }
+
+    .mobile-pricing-timeline #pills-tab .pm-td .fa-horizontal-rule {
+        padding-top: 16px;
+    }
+
+    .mobile-pricing-timeline #pills-tab .pm-td {
+        padding-top: 16px;
+    }
+
+    .mobile-pricing-timeline #pills-tab .pm-td-pad {
+        padding-top: 34px;
+    }
+
+    .mobile-pricing-timeline #pills-mastery {
+        background: transparent !important;
+        box-shadow: unset;
+    }
+
+    .mobile-pricing-timeline {
+        display: block;
+    }
+
+    .mobile-pricing-timeline .nav {
+        background: #DDE9F5;
         justify-content: center;
-        align-items: center;
-        padding-left: 35px;
+        border-radius: 10px;
+        padding: 8px 0px;
     }
 
-    .timeline-container .btn-primary img {
-        width: 40px;
-        padding-left: 10px;
-    }
-    .pricing table {
-            border-collapse: separate;
-            border-spacing: 5px 0;
-            width: 100%;
-            text-align: left;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .pricing th,
-        .pricing td {
-            font-family: inherit;
-            font-size: .875em;
-            line-height: 1.45;
-            color: #444;
-            vertical-align: middle;
-            padding: 1em;
-        }
-
-        .pricing th {
-            font-weight: 600;
-        }
-
-        .pricing colgroup:nth-child(1) {
-            width: 31%;
-            border: 0 none;
-
-        }
-
-        .pricing colgroup:nth-child(2) {
-            width: 22%;
-            /* border: 1px solid #ccc; */
-        }
-
-        .pricing colgroup:nth-child(4) {
-            width: 25%;
-            /* border: 2px solid #EA9541; */
-        }
-
-        .pricing colgroup:nth-child(3) {
-            width: 22%;
-            /* border: 1px solid #ccc; */
-        }
-
-        /* Tablehead */
-
-        .pricing thead th {
-            background: #fff;
-            text-align: center;
-            position: relative;
-            /* border-bottom: 1px solid #ccc; */
-            padding: 3em 0 2em;
-            font-weight: 400;
-            color: #999;
-            border-radius: 25px 25px 0px 0px;
-        }
-
-        .pricing thead th:nth-child(4) {
-            background: linear-gradient(87.4deg, #F2C94C 29.05%, #F2994A 110.06%);
-        }
-
-        .pricing thead th:nth-child(1) {
-            background: transparent;
-        }
-
-        .pricing thead th h2 {
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #076FEC;
-        }
-
-        .pricing thead th h2+p {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 40px;
-            color: #1F2A55;
-        }
-
-        .pricing thead th:nth-child(4) h2 {
-            color: #fff;
-        }
-
-        .pricing thead th:nth-child(4) h2+p {
-            color: #fff;
-        }
-
-
-
-        /* Tablebody */
-
-        .pricing tbody th {
-            background: transparent;
-            /* border-left: 1px solid #ccc; */
-        }
-
-        .pricing tbody th span {
-            font-weight: normal;
-            font-size: 87.5%;
-            color: #999;
-            display: block;
-        }
-
-        .pricing tbody td {
-            background: #fff;
-            text-align: center;
-        }
-
-
-
-        .pricing tbody tr:last-child td {
-            border-bottom: 0 none;
-        }
-
-        /* Tablefooter */
-
-        .pricing tfoot th {
-            padding: 2em 1em;
-        }
-
-        .pricing tfoot td {
-            text-align: center;
-            padding: 2em 1em;
-            background: #fff;
-            border-radius: 0px 0px 25px 25px;
-        }
-
-        .pricing tfoot td:nth-child(4) {
-            background: #FFF6D9;
-        }
-
-        .pricing tfoot a {
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: block;
-            padding: 1.125em 2em;
-            background: #59c7fb;
-            border-radius: .5em;
-        }
-
-        .pricing .fa-check {
-            color: #5CCB9C;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .pricing .fa-times {
-            color: #1F2A5533;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .pricing tbody td:nth-child(4) {
-            background: #FFF6D9 !important;
-        }
-
-        .pricing .pricing-icon {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 18px;
-            line-height: 24px;
-             color: #1F2A55;
-        }
-
-        .pricing svg {
-            margin-right: 15px;
-        }
-
-        .fa-horizontal-rule {
-            display: flex;
-            justify-content: center;
-            padding-top: 28px;
-        }
-
-        .fa-horizontal-rule:before {
-            color: rgba(31, 42, 85, 0.1);
-            transform: scale(10.5, 1);
-        }
-
-        .pricing del {
-            font-family: Montserrat;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 24px;
-            color: #1F2A55;
-            opacity: 0.7;
-        }
-
-        .pricing .discount {
-            background: #CCFFF3;
-            color: #005E47;
-            margin: 4px;
-            padding: 8px;
-            border-radius: 30px;
-        }
-
-        .pricing .pricing-months {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 24px;
-            color: #1F2A55;
-        }
-
-        .pricing .price-time {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 24px;
-            text-align: center;
-            color: #EA9541;
-        }
-
-        .pricing .pm {
-            display: inline-flex;
-            flex-direction: column;
-        }
-        .pricing .td-pm{
-            padding-top: 0px;
-        }
-        .pricing .td-pm .fa-horizontal-rule{
-            padding-top: 16px;
-        }
-        .pricing .pm-td .fa-horizontal-rule {
-            padding-top:16px;
-        }
-        .pricing .pm-td{
-            padding-top:16px;
-        }
-        .pricing .pm-td-pad{
-            padding-top:34px;
-        }
-        .last-cta {
-        background: linear-gradient(135deg, #205DEE 0%, #22B7EF 100%);
-        border-radius: 20px;
-    }
-
-    .foo-img img {
-        width: 154px;
-        margin-top: -10px;
-    }
-
-    .foo-text {
+    .mobile-pricing-timeline .nav-link {
         font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
-        letter-spacing: 0.1px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #7D96BC;
+    }
+
+    .mobile-pricing-timeline .nav-link span {
+        display: flex;
+        justify-content: center;
+        background: #CCFFF3;
+        color: #005E47;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 4px;
+        line-height: 20px;
+    }
+
+    .mobile-pricing-timeline .active {
+        background: #FFFFFF !important;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+        border-radius: 10px !important;
+        color: #076FEC !important;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .mobile-pricing-timeline #pills-mastery-tab {
+        background: #FFF6D9 !important;
+        border: 1px solid #F2AC4B;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+        border-radius: 10px !important;
+        margin-left: 5px;
+    }
+
+    .mobile-pricing-timeline .master-txt {
+        display: flex;
+        align-content: center;
+    }
+
+    .mobile-pricing-timeline .mast-king {
+        background: linear-gradient(87.4deg, #F2C94C 29.05%, #F2994A 110.06%);
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px;
+    }
+
+    .mobile-pricing-timeline .mast-king h2 {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+
+        text-align: center;
+        text-transform: uppercase;
+
         color: #FFFFFF;
     }
 
-    .last-cta .col-md-7,
-    .last-cta .col-md-3 {
+    .mobile-pricing-timeline .mast-king p {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 5px;
+        /* identical to box height, or 200% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .mobile-pricing-timeline colgroup:nth-child(1) {
+        width: 60%;
+    }
+
+    .mobile-pricing-timeline .pm {
         display: flex;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fa-horizontal-rule {
+        padding-top: 0px;
+    }
+
+    .last-cta .col-sm-6 {
+        width: 70%;
+        padding-bottom: 2rem;
+    }
+
+    .last-cta .col-sm-2 {
+        width: 30%;
+        display: flex;
         flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
-    .foo-cta button {
-        width: 285px;
-        height: 58px;
-        text-transform: uppercase;
-        left: 1011px;
-        top: 2450px;
-        background: #F5A623;
-        border-radius: 4px;
-        border: none;
+    .last-cta .foo-img img {
+        width: 97px;
+        margin-top: -10px;
+        margin-left: -10px;
     }
 
-    .last-cta {
-        margin: 49px 0px;
+    .last-cta .row {
+        padding: 1rem;
     }
-    .king-icon{
-    display: flex;
-    flex-direction: row;
-    margin-right: 7rem;
-    justify-content: flex-end;
+
+    .last-cta .col-sm-3 {
+        text-align: center;
+        margin-bottom: 2rem;
     }
+    .mobile-last-cta{
+        display: block;
+    }
+    .pricing-icon span {
+        margin-left: 10px;
+    }
+    .foo-text {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .mobile-pricing-timeline #pills-advanced .mast-king, .mobile-pricing-timeline #pills-mastery .mast-king,  .mobile-pricing-timeline #pills-begineer .mast-king{
+        position: relative;
+    }
+    .mobile-pricing-timeline  .offer{
+        position: absolute;
+        right: 132px;
+        top: 78px;
+    }
+   .mobile-pricing-timeline .discount{
+        position: absolute;
+        position: absolute;
+        top: 59px;
+        left: -48px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #005E47;
+        font-weight: bold;
+    }
+}
