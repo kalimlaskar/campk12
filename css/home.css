@@ -1164,8 +1164,8 @@ body {
     }
     .mobile-pricing-timeline  .offer{
         position: absolute;
-        right: 132px;
-        top: 78px;
+        margin-left: -114px;
+        padding-top: 65px;
     }
    .mobile-pricing-timeline .discount{
         position: absolute;
