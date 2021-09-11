@@ -1063,7 +1063,7 @@ body {
         line-height: 20px;
     }
 
-    .mobile-pricing-timeline #pills-mastery-tab {
+    .mobile-pricing-timeline #pills-mastery-tab.active {
         background: #FFF6D9 !important;
         border: 1px solid #F2AC4B;
         box-sizing: border-box;
@@ -1171,7 +1171,7 @@ body {
         position: absolute;
         position: absolute;
         top: 59px;
-        left: -42px;
+        left: -48px;
         font-size: 12px;
         line-height: 20px;
         color: #005E47;
