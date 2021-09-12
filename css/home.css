@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     background: #EAF6FD;
     font-family: 'Montserrat', sans-serif;
@@ -264,23 +265,23 @@ body {
 }
 
 .pricing colgroup:nth-child(1) {
-    width: 31%;
+    width: 500px;
     border: 0 none;
 
 }
 
 .pricing colgroup:nth-child(2) {
-    width: 22%;
+    width: 230px;
     /* border: 1px solid #ccc; */
 }
 
 .pricing colgroup:nth-child(4) {
-    width: 25%;
+    width: 230px;
     /* border: 2px solid #EA9541; */
 }
 
 .pricing colgroup:nth-child(3) {
-    width: 22%;
+    width: 230px;
     /* border: 1px solid #ccc; */
 }
 
@@ -348,6 +349,7 @@ body {
 .pricing tbody td {
     background: #fff;
     text-align: center;
+    position: relative;
 }
 
 
@@ -412,7 +414,9 @@ body {
 .pricing svg {
     margin-right: 15px;
 }
-
+.pricing .king-icon svg{
+    margin-right: unset;
+}
 .fa-horizontal-rule {
     display: flex;
     justify-content: center;
@@ -422,6 +426,7 @@ body {
 .fa-horizontal-rule:before {
     color: rgba(31, 42, 85, 0.1);
     transform: scale(10.5, 1);
+    position: absolute;
 }
 
 .pricing del {
@@ -524,7 +529,7 @@ body {
 .king-icon {
     display: flex;
     flex-direction: row;
-    margin-right: 7rem;
+    margin-right: 6.5vw;
     justify-content: flex-end;
 }
 
@@ -536,8 +541,58 @@ body {
     color: #076FEC;
     font-weight: 600;
 }
+@media only screen and (min-width:1600px){
+    .king-icon{
+        margin-right: 5vw;
+    }
 
-@media screen and (max-width:768px) {
+}
+@media only screen and (max-width:1400px) and (min-width:1200px){
+    .timeline-summary svg {
+    margin-top: -5.4rem;
+    margin-left: -2.4rem;
+    height: 64px;
+    }
+}
+@media only screen and (max-width: 1400px) and (min-width: 992px)  {
+    .foo-cta button{
+        width: unset;
+    }
+}
+
+@media(max-width: 1199px){
+    .king-icon{
+        margin-right: 6vw;
+    }
+}
+
+@media(max-width: 1024px){
+    .hero-nav .nav-item{
+        margin: 5px 0px;
+    }
+    .king-icon{
+        margin-right: 7vw;
+    }
+}
+
+@media(max-width: 991px){
+    .last-cta .row{
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .king-icon{
+        margin-right: 5vw;
+    }
+    .pricing thead th h2+p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .foo-cta{
+        margin-top: 1rem;
+        text-align: center;
+    }
     .mobile-filter-grade {
         display: block !important;
     }
@@ -619,6 +674,7 @@ body {
 
     .mobile-timeline-summary {
         position: relative;
+        padding-right: 1rem;
     }
 
     .mobile-timeline-summary .dashed {
@@ -767,9 +823,14 @@ body {
         height: 4rem;
     }
 
-    .mobile-pricing-timeline .mast-king svg {
+    
+    .mobile-pricing-timeline .mast-king svg:nth-child(1) {
         margin-top: -40px;
         margin-left: 35px;
+    }
+    .mobile-pricing-timeline .mast-king svg:nth-child(2) {
+        margin-top: -40px;
+        margin-left: 9vw;
     }
     .mobile-pricing-timeline #pills-begineer, .mobile-pricing-timeline #pills-advanced {
         background: transparent !important;
@@ -948,7 +1009,7 @@ body {
     }
 
     .mobile-pricing-timeline #pills-tab svg {
-        margin-right: 15px;
+        margin-left: 10px;
     }
 
     .pricing-icon svg {
@@ -1133,8 +1194,11 @@ body {
 
     .mobile-pricing-timeline .pm {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
     }
 
     .fa-horizontal-rule {
@@ -1143,8 +1207,8 @@ body {
 
     .last-cta .col-sm-6 {
         width: 70%;
-        padding-bottom: 2rem;
     }
+
 
     .last-cta .col-sm-2 {
         width: 30%;
@@ -1162,7 +1226,7 @@ body {
     }
 
     .last-cta .row {
-        padding: 1rem;
+        align-items: center;
     }
 
     .last-cta .col-sm-3 {
@@ -1171,6 +1235,11 @@ body {
     }
     .mobile-last-cta{
         display: block;
+        padding: 20px 20px;
+        padding-bottom: 30px;
+    }
+    .mobile-last-cta .row{
+        padding-bottom: 0;
     }
     .pricing-icon span {
         margin-left: 10px;
@@ -1196,5 +1265,26 @@ body {
         line-height: 20px;
         color: #005E47;
         font-weight: bold;
+    }
+}
+@media(max-width: 575px){
+    .last-cta .foo-img img{
+        width: 100%;
+    }
+    
+    .mobile-pricing-timeline .mast-king svg:nth-child(2) {
+        margin-top: -40px;
+        margin-left: 11vw;
+    }
+    
+}
+
+
+@media(max-width: 360px){
+    .foo-cta button{
+        width: max-content;
+        height: max-content;
+        padding: 10px 25px;
+        font-size: 14px;
     }
 }
