@@ -277,17 +277,17 @@ body {
 }
 
 .pricing colgroup:nth-child(2) {
-    width: 230px;
+    width: 200px;
     /* border: 1px solid #ccc; */
 }
 
 .pricing colgroup:nth-child(4) {
-    width: 230px;
+    width: 200px;
     /* border: 2px solid #EA9541; */
 }
 
 .pricing colgroup:nth-child(3) {
-    width: 230px;
+    width: 200px;
     /* border: 1px solid #ccc; */
 }
 
