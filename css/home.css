@@ -573,8 +573,9 @@ i.fas.fa-check{
 .pricing .pricing-month-txt{
     font-weight: var(--fontweight);
 }
-.pricing .col-md-2:nth-child(4) .pricing-head, .pricing .col-md-2:nth-child(4) .pricing-month, .pricing .col-md-2:nth-child(4) .pricing-offer{
+.pricing .col-md-2:nth-child(4) .pricing-head, .pricing .col-md-2:nth-child(4) .pricing-month, .pricing .col-md-2:nth-child(4) .pricing-offer, .pricing .col-md-2:nth-child(4) del{
  color: #fff!important;
+    opacity:1;
 }
 .last-cta {
     background: linear-gradient(135deg, #205DEE 0%, #22B7EF 100%);
