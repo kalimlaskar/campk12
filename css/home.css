@@ -50,7 +50,13 @@ h1, h2{
 .mobile-pricing-timeline #pills-mastery .col-sm-4 {
     background: #FFF6D9;
 }
-
+.pricing-dsc__off {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #EA9541;
+}
 .mobile-pricing-timeline #pills-mastery .col-sm-4:nth-child(2n) {
     border-right: 2px solid #F2C44C;
     border-left: 2px solid #F2C44C;
