@@ -622,7 +622,13 @@ i.fas.fa-check{
     color: #076FEC;
     font-weight: var(--fontweight);
 }
-
+.mobile-pricing-timeline span.pm {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #EA9541;
+}
 @media only screen and (min-width:1600px){
     .king-icon{
         margin-right: 5vw;
